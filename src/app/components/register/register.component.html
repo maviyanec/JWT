@@ -1,0 +1,51 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmitClick()" class="border p-3 rounded-3">
+
+    <div class="row">
+        <div class="col mb-3">
+            <div class="text-center">
+                Register</div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col mb-3">
+            First Name   <input type="text" class="form-control" formControlName="FirstName" id="FirstName">
+        </div>
+        <div class="col mb-3">
+            Last Name <input type="text" class="form-control" formControlName="LastName" id="LastName">
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col mb-3">
+            Email     <input type="text" class="form-control" formControlName="Email" id="Email">
+        </div>
+        <div class="col mb-3">
+            Mobile Number <input type="text" class="form-control" formControlName="Number" id="Number"> 
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            Password <input type="text" class="form-control" formControlName="Password" id="Password" >
+        </div>
+        <div class="col mb-3">
+            Repeat Password  <input type="text" class="form-control" formControlName="rpwd" id="rpwd">
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <input type="radio"  value="m" formControlName="gender"> Male
+            <input type="radio"  value="f" formControlName="gender"> Female
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col mb-6">
+            <input type="submit" value="Submit" class="btn btn-primary">
+        </div>
+    </div>
+
+</form>
